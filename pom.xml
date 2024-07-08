@@ -27,6 +27,15 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>com.otz</groupId>
+				<artifactId>base-module</artifactId>
+				<version>1.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -64,7 +73,6 @@
 		<dependency>
 			<groupId>jakarta.enterprise</groupId>
 			<artifactId>jakarta.enterprise.cdi-api</artifactId>
-			<scope>provided</scope>
 		</dependency>
 
 
@@ -73,6 +81,12 @@
 			<artifactId>quarkus-app-modules</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.otz</groupId>
+			<artifactId>message-broker</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
